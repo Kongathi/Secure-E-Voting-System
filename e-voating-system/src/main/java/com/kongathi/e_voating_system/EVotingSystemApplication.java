@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EVoatingSystemApplication {
+public class EVotingSystemApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EVoatingSystemApplication.class, args);
+		SpringApplication.run(EVotingSystemApplication.class, args);
 	}
 
 }
