@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cast Your Vote - E-Vote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="vote-page">
+    <header id="main-header" class="scrolled">
+        <nav class="container">
+            <a href="index.html" class="logo">E-VOTE</a>
+        </nav>
+    </header>
+
+    <main class="container" style="padding-top: 8rem;">
+        <div class="vote-header reveal visible">
+            <h2>Select Your Candidate</h2>
+            <p>Click on a candidate to select them, then confirm your choice.</p>
+        </div>
+        <div id="candidate-list" class="candidate-grid">
+            </div>
+        <div class="vote-submission reveal visible">
+            <p id="selection-text">No candidate selected.</p>
+            <button id="submit-vote-btn" class="btn" disabled>Cast Final Vote</button>
+        </div>
+        <div id="vote-message" class="message"></div>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>

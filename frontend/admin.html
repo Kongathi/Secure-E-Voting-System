@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - E-Vote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="admin-page">
+    <header id="main-header" class="scrolled">
+        <nav class="container">
+            <a href="index.html" class="logo">E-VOTE</a>
+        </nav>
+    </header>
+
+    <main class="container" style="padding-top: 8rem;">
+        <div id="admin-login-view">
+             <div class="glass-wrapper" style="color: var(--text-color); background: var(--secondary-color);">
+                <h2>Administrator Login</h2>
+                <form id="admin-login-form">
+                    <div class="input-group">
+                        <label for="username" style="color: var(--text-color);">Username</label>
+                        <input type="text" id="username" placeholder="e.g., admin_user" required style="background: white; border-color: var(--border-color); color: var(--text-color);">
+                    </div>
+                    <div class="input-group">
+                        <label for="password" style="color: var(--text-color);">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required style="background: white; border-color: var(--border-color); color: var(--text-color);">
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+                 <div id="admin-login-message" class="message"></div>
+            </div>
+        </div>
+
+        <div id="admin-dashboard-view" style="display: none;">
+            <h2>Admin Dashboard</h2>
+            
+            <div class="admin-section">
+                <h3>Add New Candidate</h3>
+                <form id="add-candidate-form" class="admin-form">
+                    <input type="text" id="candidate-name" placeholder="Candidate Name" required>
+                    <input type="text" id="candidate-party" placeholder="Candidate Party" required>
+                    <button type="submit" class="btn">Add Candidate</button>
+                </form>
+            </div>
+
+            <div class="admin-section">
+                <h3>Manage Candidates</h3>
+                <div id="manage-candidate-list"></div>
+            </div>
+
+            <div class="admin-section">
+                <h3>Election Controls</h3>
+                <button id="reset-election-btn" class="btn btn-danger">Reset Election Data</button>
+                <p class="warning">Warning: This will delete all votes and reset all vote counts.</p>
+            </div>
+        </div>
+        <div id="admin-action-message" class="message"></div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

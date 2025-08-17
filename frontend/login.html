@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Authentication - E-Vote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="login-page">
+    <header id="main-header">
+        <nav class="container">
+            <a href="index.html" class="logo">E-VOTE</a>
+            <ul class="nav-links">
+                <li><a href="results.html">Live Results</a></li>
+                <li><a href="admin.html">Admin Panel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-page-background">
+        <div class="glass-wrapper reveal visible">
+            <h2>Voter Authentication</h2>
+            <p>Please enter your registered Voter ID to continue.</p>
+            <form id="voter-login-form">
+                <div class="input-group">
+                    <label for="voterId">Voter ID</label>
+                    <input type="text" id="voterId" name="voterId" placeholder="Enter your ID" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Authenticate & Proceed</button>
+            </form>
+            <div id="login-message" class="message"></div>
+        </div>
+        <div class="glass-wrapper reveal visible">
+    <h2>Voter Authentication</h2>
+    <p>Please enter your registered Voter ID to continue.</p>
+    <form id="voter-login-form">
+        <div class="input-group">
+            <label for="voterId">Voter ID</label>
+            <input type="text" id="voterId" name="voterId" placeholder="Enter your ID" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Authenticate & Proceed</button>
+    </form>
+    <div id="login-message" class="message"></div>
+    
+    <div class="form-footer-link">
+        <p>Not registered yet? <a href="register.html">Create an account</a></p>
+    </div>
+    </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

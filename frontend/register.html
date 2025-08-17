@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register to Vote - E-Vote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="register-page">
+    <header id="main-header">
+        <nav class="container">
+            <a href="index.html" class="logo">E-VOTE</a>
+            <ul class="nav-links">
+                <li><a href="login.html">Already Registered? Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-page-background">
+        <div class="glass-wrapper reveal visible">
+            <h2>Voter Registration</h2>
+            <p>Complete the form below to register for the election.</p>
+            <form id="voter-registration-form">
+                <div class="input-group">
+                    <label for="voterName">Full Name</label>
+                    <input type="text" id="voterName" name="voterName" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <label for="voterEmail">Email Address</label>
+                    <input type="email" id="voterEmail" name="voterEmail" placeholder="Enter your email" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Register Now</button>
+            </form>
+            <div id="register-message" class="message"></div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
